@@ -1,0 +1,42 @@
+
+
+<html>
+ <head>
+ 	<title>Pong Game</title>
+  <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"> </script>  
+  
+  <script> 
+
+   function start() {
+     sjs.open("target", 
+     	500, 500);
+	//Ball Objects and Porperties
+
+	var ball = new sjs.Image("Images/basketball.png")
+		ball.type = "ball";
+		ball.centerH();
+		ball.center
+		ball.friction = .4;
+		ball.pushUp(4);
+		ball.pushRight(3);
+		ball.bounce();
+
+
+}//end start
+
+
+
+
+ball.setSize(50,100);
+ball.center().offset(0,50);
+
+
+
+  </script>  
+ </head>  
+	 <body onload="start()">
+	 	<h1>Pong Game by Luke</h1>
+	  <div id="target" style="margin: auto; background:lightgrey;"></div>
+	 </body>
+</html>
+	
